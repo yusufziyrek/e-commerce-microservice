@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: auth-service
+  cloud:
+    config:
+      uri: http://localhost:8888  # ✅ Config Server doğru portta!
+      fail-fast: true  # Config Server'a bağlanamazsa hata versin
+      retry:
+        max-attempts: 3  # Bağlanamazsa 5 kez denesin
